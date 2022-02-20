@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    Title="Principal page"
+    x:Class="Porschapp.PrincipalPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#A43131" Offset="0.1" />
+                    <GradientStop Color="#222831" Offset="0.4" />
+                    <GradientStop Color="#55717E" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+
+            <Grid Margin="50">
+
+                <Grid Margin="2">
+                    <Image
+                        Aspect="AspectFill"
+                        Source="https://i.ibb.co/YdGT3HS/image.png"
+                        VerticalOptions="Start" />
+                </Grid>
+
+                <Grid Margin="5" VerticalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+
+                    <Button
+                        BackgroundColor="Transparent"
+                        FontSize="24"
+                        Grid.Row="0"
+                        Text="Modelos"
+                        TextColor="White" />
+                    <Button
+                        BackgroundColor="Transparent"
+                        FontFamily="911porschav3.ttf"
+                        FontSize="24"
+                        Grid.Row="1"
+                        Text="Historia"
+                        TextColor="White" />
+                    <Button
+                        BackgroundColor="Transparent"
+                        FontSize="24"
+                        Grid.Row="2"
+                        Text="MotorSport"
+                        TextColor="White" />
+                    <Button
+                        BackgroundColor="Transparent"
+                        FontSize="24"
+                        Grid.Row="3"
+                        Text="Noticias"
+                        TextColor="White" />
+                </Grid>
+
+                <Image
+                    Aspect="AspectFit"
+                    Source="https://i.ibb.co/4sNX4kF/Porsche-Logo.png"
+                    VerticalOptions="End" />
+
+            </Grid>
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
