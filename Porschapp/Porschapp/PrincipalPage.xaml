@@ -5,6 +5,8 @@
     x:Class="Porschapp.PrincipalPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+
     <ContentPage.Content>
         <Grid>
             <Grid.Background>
@@ -35,39 +37,33 @@
 
                     <Button
                         BackgroundColor="Transparent"
+                        FontFamily="Porsche"
                         FontSize="24"
                         Grid.Row="0"
                         Text="Modelos"
                         TextColor="White" />
                     <Button
                         BackgroundColor="Transparent"
-                        FontFamily="911porschav3.ttf"
+                        Clicked="go_to_history"
+                        FontFamily="Porsche"
                         FontSize="24"
                         Grid.Row="1"
                         Text="Historia"
                         TextColor="White" />
                     <Button
                         BackgroundColor="Transparent"
-                        FontSize="24"
+                        Clicked="go_to_motorsport"
+                        FontFamily="Porsche"
+                        FontSize="18"
                         Grid.Row="2"
                         Text="MotorSport"
                         TextColor="White" />
-                    <Button
-                        BackgroundColor="Transparent"
-                        FontSize="24"
-                        Grid.Row="3"
-                        Text="Noticias"
-                        TextColor="White" />
                 </Grid>
-
                 <Image
                     Aspect="AspectFit"
                     Source="https://i.ibb.co/4sNX4kF/Porsche-Logo.png"
                     VerticalOptions="End" />
-
             </Grid>
-
-
         </Grid>
     </ContentPage.Content>
 </ContentPage>

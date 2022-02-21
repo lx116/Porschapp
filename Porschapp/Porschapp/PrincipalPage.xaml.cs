@@ -17,9 +17,14 @@ namespace Porschapp
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void go_to_history(object sender, EventArgs e )
         {
-            App.FlyoutP.Detail.Navigation.PushAsync(new HomePage());
+            App.FlyoutP.Detail.Navigation.PushAsync(new History());
+            App.FlyoutP.IsPresented = false;
+        }
+        private void go_to_motorsport(object sender, EventArgs e )
+        {
+            App.FlyoutP.Detail.Navigation.PushAsync(new MotorSport());
             App.FlyoutP.IsPresented = false;
         }
     }

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    Title="Porsche 911"
+    x:Class="Porschapp.Porsche911"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#464C47" Offset="0.1" />
+                        <GradientStop Color="#222831" Offset="0.4" />
+                        <GradientStop Color="#0F0F0F" Offset="1" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Grid Margin="20,5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="200" />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Source="https://i.ibb.co/gRr3ncK/porsche-model.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="28"
+                        Grid.Row="1"
+                        Text="PORSCHE 911"
+                        TextColor="White" />
+                    <Label
+                        FontFamily="Montserrat"
+                        FontSize="18"
+                        Grid.Row="2"
+                        x:Name="DescriptionOne" />
+                    <Image Grid.Row="3" Source="https://i.ibb.co/Mkfv8tx/porsche-911-porsche-901-1963-1973-201852203-15-removebg-preview.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="28"
+                        Grid.Row="4"
+                        Text="901"
+                        TextColor="White" />
+                    <Label
+                        FontFamily="Montserrat"
+                        FontSize="18"
+                        Grid.Row="5"
+                        TextColor="White"
+                        x:Name="DescriptionTwo" />
+                    <Image Grid.Row="6" Source="https://i.ibb.co/C5dhH1g/1993-Porsche-911-964-Turbo-3-removebg-preview.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="28"
+                        Grid.Row="7"
+                        Text="964"
+                        TextColor="White" />
+                    <Label
+                        FontFamily="Montserrat"
+                        FontSize="18"
+                        Grid.Row="8"
+                        TextColor="White"
+                        x:Name="DescriptionThree" />
+                    <Image Grid.Row="9" Source="https://i.ibb.co/RBTvFd3/porsche-911-997-2004-2012-201852305-9-removebg-preview.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="28"
+                        Grid.Row="10"
+                        Text="997"
+                        TextColor="White" />
+                    <Label
+                        FontFamily="Montserrat"
+                        FontSize="18"
+                        Grid.Row="11"
+                        TextColor="White"
+                        x:Name="DescriptionFour" />
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

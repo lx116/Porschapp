@@ -1,19 +1,127 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <ContentPage
-    NavigationPage.HasNavigationBar="False"
+    Title="Home"
     x:Class="Porschapp.DetailPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout.Background>
+        <Grid>
+            <Grid.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#464C47" Offset="0.1" />
                     <GradientStop Color="#222831" Offset="0.4" />
                     <GradientStop Color="#0F0F0F" Offset="1" />
                 </LinearGradientBrush>
-            </StackLayout.Background>
-        </StackLayout>
+            </Grid.Background>
+
+            <Grid Margin="20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="240" />
+                    <RowDefinition Height="60" />
+                </Grid.RowDefinitions>
+
+                <Image
+                    Aspect="AspectFill"
+                    Grid.Row="0"
+                    Source="https://i.ibb.co/GscVdJ4/porsche-logo-removebg-preview.png" />
+                <Label
+                    FontFamily="Porsche"
+                    FontSize="24"
+                    Grid.Row="1"
+                    Text="MODELOS"
+                    TextColor="White" />
+                <ScrollView
+                    Grid.Row="2"
+                    HorizontalOptions="FillAndExpand"
+                    Orientation="Horizontal">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="178" />
+                            <ColumnDefinition Width="178" />
+                            <ColumnDefinition Width="178" />
+                            <ColumnDefinition Width="178" />
+                            <ColumnDefinition Width="178" />
+                        </Grid.ColumnDefinitions>
+                        <ImageButton
+                            BackgroundColor="Transparent"
+                            Clicked="go_to_911"
+                            Grid.Column="0"
+                            Source="https://i.ibb.co/h9Q1Qrk/image.png" />
+                        <ImageButton
+                            BackgroundColor="Transparent"
+                            Grid.Column="1"
+                            Source="https://i.ibb.co/RCY7gg8/image.png" />
+                        <ImageButton
+                            BackgroundColor="Transparent"
+                            Clicked="go_to_carrera"
+                            Grid.Column="2"
+                            Source="https://i.ibb.co/1JbmsXX/image.png" />
+                        <ImageButton
+                            BackgroundColor="Transparent"
+                            Grid.Column="3"
+                            Source="https://i.ibb.co/tCPx5r5/image.png" />
+                    </Grid>
+                </ScrollView>
+                <Grid Row="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="28" />
+                        <RowDefinition Height="121" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="179" />
+                        <ColumnDefinition Width="179" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="24"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Text="Historia"
+                        TextColor="White" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="18"
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Text="MotorSport"
+                        TextColor="White" />
+                    <ImageButton
+                        BackgroundColor="Transparent"
+                        Clicked="go_to_motorsport"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Source="https://i.ibb.co/bs9XvSV/image.png" />
+                    <ImageButton
+                        BackgroundColor="Transparent"
+                        Clicked="go_to_history"
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        Source="https://i.ibb.co/nkGjhXx/image.png" />
+                </Grid>
+                <Frame CornerRadius="20" Grid.Row="5">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#55717E" Offset="0.1" />
+                            <GradientStop Color="#222831" Offset="0.5" />
+                            <GradientStop Color="#55717E" Offset="0.1" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                </Frame>
+                <ImageButton
+                    BackgroundColor="Transparent"
+                    Grid.Row="5"
+                    Source="https://i.ibb.co/bsJxmdt/image.png" />
+
+            </Grid>
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

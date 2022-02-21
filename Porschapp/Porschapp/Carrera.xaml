@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    Title="Carrera GT"
+    x:Class="Porschapp.Carrera"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#464C47" Offset="0.1" />
+                        <GradientStop Color="#222831" Offset="0.4" />
+                        <GradientStop Color="#0F0F0F" Offset="1" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Grid Margin="20,5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="200" />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Source="https://i.ibb.co/xjTYjf8/2004-porsche-carrera-gt-with-67-000-miles-removebg-preview.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="22"
+                        Grid.Row="1"
+                        Text="PORSCHE CARRERA GT"
+                        TextColor="White" />
+                    <Label
+                        FontFamily="Montserrat"
+                        FontSize="18"
+                        Grid.Row="2"
+                        x:Name="DescriptionOneCar" />
+                    <Image Grid.Row="3" Source="https://i.ibb.co/4Scssc1/1997-Porsche-911-GT1-Straenversion1-removebg-preview.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="28"
+                        Grid.Row="4"
+                        Text="Origen"
+                        TextColor="White" />
+                    <Label
+                        FontFamily="Montserrat"
+                        FontSize="18"
+                        Grid.Row="5"
+                        TextColor="White"
+                        x:Name="DescriptionTwoCar" />
+                    <Image Grid.Row="6" Source="https://i.ibb.co/G5RV2V0/6277154834-93918a615b-b-removebg-preview.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="28"
+                        Grid.Row="7"
+                        Text="Motor"
+                        TextColor="White" />
+                    <Label
+                        FontFamily="Montserrat"
+                        FontSize="18"
+                        Grid.Row="8"
+                        TextColor="White"
+                        x:Name="DescriptionThreeCar" />
+                    <Image Grid.Row="9" Source="https://i.ibb.co/f01tq6Q/porsche-carrera-gt-91-removebg-preview.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="28"
+                        Grid.Row="10"
+                        Text="Leyenda"
+                        TextColor="White" />
+                    <Label
+                        FontFamily="Montserrat"
+                        FontSize="18"
+                        Grid.Row="11"
+                        TextColor="White"
+                        x:Name="DescriptionFourCar" />
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
