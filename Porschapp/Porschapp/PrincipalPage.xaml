@@ -34,14 +34,6 @@
                         <RowDefinition Height="50" />
                         <RowDefinition Height="50" />
                     </Grid.RowDefinitions>
-
-                    <Button
-                        BackgroundColor="Transparent"
-                        FontFamily="Porsche"
-                        FontSize="24"
-                        Grid.Row="0"
-                        Text="Modelos"
-                        TextColor="White" />
                     <Button
                         BackgroundColor="Transparent"
                         Clicked="go_to_history"

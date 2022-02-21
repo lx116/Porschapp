@@ -38,5 +38,22 @@ namespace Porschapp
             App.FlyoutP.Detail.Navigation.PushAsync(new Carrera());
             App.FlyoutP.IsPresented = false;
         }
+
+        private void go_to_cayenne(object sender, EventArgs e)
+        { 
+            App.FlyoutP.Detail.Navigation.PushAsync(new Cayenne());
+            App.FlyoutP.IsPresented = false;
+        }
+        private void go_to_tycan(object sender, EventArgs e)
+        { 
+            App.FlyoutP.Detail.Navigation.PushAsync(new Tycan());
+            App.FlyoutP.IsPresented = false;
+        }
+
+        private void go_to_login(object sender, EventArgs e)
+        {
+            App.FlyoutP.Detail.Navigation.PushAsync(new login());
+            App.FlyoutP.IsPresented = false;
+        }
     }
 }

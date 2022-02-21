@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    Title="Registrarse"
+    x:Class="Porschapp.Register"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#464C47" Offset="0.1" />
+                    <GradientStop Color="#222831" Offset="0.4" />
+                    <GradientStop Color="#0F0F0F" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid Margin="20,80">
+                <ScrollView Orientation="Vertical">
+                    <Frame
+                        BackgroundColor="White"
+                        CornerRadius="30"
+                        VerticalOptions="Center">
+                        <StackLayout Padding="20,10" VerticalOptions="Center">
+                            <Label
+                                FontSize="Title"
+                                Margin="0,5"
+                                Text="Personal information"
+                                TextColor="#5868DD" />
+                            <Label
+                                FontSize="Large"
+                                Text="First name"
+                                VerticalOptions="Center" />
+                            <Entry
+                                IsTextPredictionEnabled="True"
+                                VerticalOptions="Center"
+                                x:Name="FirstName" />
+                            <Label
+                                FontSize="Large"
+                                Text="Last name"
+                                VerticalOptions="Center" />
+                            <Entry VerticalOptions="Center" x:Name="LastName" />
+                            <Label
+                                FontSize="Large"
+                                Text="Birthdate "
+                                VerticalOptions="Center" />
+                            <DatePicker />
+                            <Picker Title="Select your gender">
+                                <Picker.Items>
+                                    <x:String>Male</x:String>
+                                    <x:String>Female</x:String>
+                                    <x:String>No Binary</x:String>
+                                </Picker.Items>
+                            </Picker>
+                            <Label
+                                FontSize="Title"
+                                Margin="0,5"
+                                Text="User Information"
+                                TextColor="#5868DD" />
+                            <Line Scale="100" />
+                            <Label
+                                FontSize="Large"
+                                Text="E-mail"
+                                VerticalOptions="Center" />
+                            <Entry
+                                IsEnabled="True"
+                                IsTextPredictionEnabled="True"
+                                Keyboard="Email"
+                                VerticalOptions="Center"
+                                x:Name="Email" />
+                            <Label
+                                FontSize="Large"
+                                Text="Password"
+                                VerticalOptions="Center" />
+                            <Entry
+                                BackgroundColor="White"
+                                IsPassword="True"
+                                VerticalOptions="Center"
+                                x:Name="Password" />
+                            <Label
+                                FontSize="Large"
+                                Text="Confirm Password"
+                                VerticalOptions="Center" />
+                            <Entry
+                                BackgroundColor="White"
+                                IsPassword="True"
+                                VerticalOptions="Center"
+                                x:Name="PasswordC" />
+                            <Label
+                                FontSize="Large"
+                                Text="Phone"
+                                VerticalOptions="Center" />
+                            <Entry
+                                BackgroundColor="White"
+                                VerticalOptions="Center"
+                                x:Name="Phone" />
+                        </StackLayout>
+                    </Frame>
+                </ScrollView>
+            </Grid>
+            <StackLayout HorizontalOptions="End" VerticalOptions="End">
+                <Button
+                    BackgroundColor="White"
+                    Clicked="Login"
+                    CornerRadius="20"
+                    HorizontalOptions="Center"
+                    Text="Start"
+                    TextColor="#5868DD"
+                    VerticalOptions="Center" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -5,11 +5,23 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <StackLayout>
-            <Label
-                HorizontalOptions="CenterAndExpand"
-                Text="Hello, world!"
-                VerticalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#464C47" Offset="0.1" />
+                    <GradientStop Color="#222831" Offset="0.4" />
+                    <GradientStop Color="#0F0F0F" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid Margin="50">
+                <Image Source="https://i.ibb.co/YdGT3HS/image.png" />
+                <Label
+                    FontFamily="Montserrat"
+                    FontSize="30"
+                    HorizontalTextAlignment="Center"
+                    Text="Este apartado estara disponible en la siguiente actualizacion"
+                    TextColor="White" />
+            </Grid>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

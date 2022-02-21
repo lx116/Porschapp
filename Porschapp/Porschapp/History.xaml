@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <ContentPage
+    Title="Historia"
     x:Class="Porschapp.History"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
@@ -18,7 +19,16 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="200" />
                         <RowDefinition Height="200" />
-                        <RowDefinition Height="300" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="200" />
                     </Grid.RowDefinitions>
                     <Image
                         Grid.Row="0"
@@ -31,6 +41,51 @@
                         HorizontalOptions="CenterAndExpand"
                         TextColor="White"
                         x:Name="Intro" />
+                    <Image
+                        Grid.Row="2"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="https://i.ibb.co/5RGzX0G/Crean-la-Fundacio-n-Ferry-Porsche-removebg-preview.png" />
+                    <Label
+                        FontFamily="Montserrat"
+                        Grid.Row="3"
+                        TextColor="White"
+                        x:Name="Europa" />
+                    <Image
+                        Grid.Row="4"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="https://i.ibb.co/JR0y1KJ/24991-n-removebg-preview.png" />
+                    <Label
+                        FontFamily="Montserrat"
+                        Grid.Row="5"
+                        TextColor="White"
+                        x:Name="P356" />
+                    <Image
+                        Grid.Row="6"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="https://i.ibb.co/Mkfv8tx/porsche-911-porsche-901-1963-1973-201852203-15-removebg-preview.png" />
+                    <Label
+                        FontFamily="Montserrat"
+                        Grid.Row="7"
+                        TextColor="White"
+                        x:Name="P901" />
+                    <Image
+                        Grid.Row="8"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="https://i.ibb.co/TwwtK29/porsche-normal-removebg-preview-1.png" />
+                    <Label
+                        FontFamily="Montserrat"
+                        Grid.Row="9"
+                        TextColor="White"
+                        x:Name="Crisis" />
+                    <Image
+                        Grid.Row="10"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="https://i.ibb.co/RBV4dJz/b5813908c9e66e4fd6c6d6953bce2772-removebg-preview.png" />
+                    <Label
+                        FontFamily="Montserrat"
+                        Grid.Row="11"
+                        TextColor="White"
+                        x:Name="Presente" />
                 </Grid>
 
             </Grid>

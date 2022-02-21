@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <ContentPage
-    Title="911"
-    x:Class="Porschapp.Porsche911"
+    Title="Taycan"
+    x:Class="Porschapp.Tycan"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
@@ -18,7 +18,7 @@
                 <Grid Margin="20,5">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="200" />
-                        <RowDefinition Height="30" />
+                        <RowDefinition Height="60" />
                         <RowDefinition Height="200" />
                         <RowDefinition Height="200" />
                         <RowDefinition Height="30" />
@@ -30,57 +30,57 @@
                         <RowDefinition Height="30" />
                         <RowDefinition Height="200" />
                     </Grid.RowDefinitions>
-                    <Image Grid.Row="0" Source="https://i.ibb.co/gRr3ncK/porsche-model.png" />
+                    <Image Grid.Row="0" Source="https://i.ibb.co/dpjXpYY/porsche-model-4.png" />
                     <Label
                         FontFamily="Porsche"
-                        FontSize="28"
+                        FontSize="22"
                         Grid.Row="1"
-                        Text="PORSCHE 911"
+                        Text="Taycan"
                         TextColor="White" />
                     <Label
                         FontFamily="Montserrat"
                         FontSize="18"
                         Grid.Row="2"
-                        x:Name="DescriptionOne" />
-                    <Image Grid.Row="3" Source="https://i.ibb.co/Mkfv8tx/porsche-911-porsche-901-1963-1973-201852203-15-removebg-preview.png" />
+                        x:Name="DescriptionOneCar" />
+                    <Image Grid.Row="3" Source="https://i.ibb.co/WcLm6F2/porsche-preview-removebg-preview.png" />
                     <Label
                         FontFamily="Porsche"
                         FontSize="28"
                         Grid.Row="4"
-                        Text="901"
+                        Text="Mission E"
                         TextColor="White" />
                     <Label
                         FontFamily="Montserrat"
                         FontSize="18"
                         Grid.Row="5"
                         TextColor="White"
-                        x:Name="DescriptionTwo" />
-                    <Image Grid.Row="6" Source="https://i.ibb.co/C5dhH1g/1993-Porsche-911-964-Turbo-3-removebg-preview.png" />
+                        x:Name="DescriptionTwoCar" />
+                    <Image Grid.Row="6" Source="https://i.ibb.co/6FnS6BG/20200710-PORSCHE-TAYCAN-ELECTRICO-COLOMBIA-PRECIO-VERSIONES-CARACTERISTICAS-01-removebg-preview.png" />
                     <Label
                         FontFamily="Porsche"
                         FontSize="28"
                         Grid.Row="7"
-                        Text="964"
+                        Text="presente"
                         TextColor="White" />
                     <Label
                         FontFamily="Montserrat"
                         FontSize="18"
                         Grid.Row="8"
                         TextColor="White"
-                        x:Name="DescriptionThree" />
-                    <Image Grid.Row="9" Source="https://i.ibb.co/RBTvFd3/porsche-911-997-2004-2012-201852305-9-removebg-preview.png" />
+                        x:Name="DescriptionThreeCar" />
+                    <Image Grid.Row="9" Source="https://i.ibb.co/HPsz2Hn/16250590142768-removebg-preview.png" />
                     <Label
                         FontFamily="Porsche"
                         FontSize="28"
                         Grid.Row="10"
-                        Text="997"
+                        Text="futuro"
                         TextColor="White" />
                     <Label
                         FontFamily="Montserrat"
                         FontSize="18"
                         Grid.Row="11"
                         TextColor="White"
-                        x:Name="DescriptionFour" />
+                        x:Name="DescriptionFourCar" />
                 </Grid>
             </Grid>
         </ScrollView>

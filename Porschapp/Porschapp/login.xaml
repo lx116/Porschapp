@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    Title="Login"
+    x:Class="Porschapp.login"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <Grid>
+            <Grid Padding="30,50">
+                <Image Source="https://i.ibb.co/YdGT3HS/image.png" VerticalOptions="Start" />
+                <Grid.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#464C47" Offset="0.1" />
+                        <GradientStop Color="#222831" Offset="0.4" />
+                        <GradientStop Color="#0F0F0F" Offset="1" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Frame
+                    BackgroundColor="White"
+                    CornerRadius="30"
+                    VerticalOptions="Center">
+                    <StackLayout Padding="20,10" VerticalOptions="Center">
+
+                        <Label
+                            FontFamily="Times New Romans"
+                            FontSize="Large"
+                            Text="E-mail"
+                            VerticalOptions="Center" />
+                        <Entry
+                            IsEnabled="True"
+                            IsTextPredictionEnabled="True"
+                            Keyboard="Email"
+                            VerticalOptions="Center"
+                            x:Name="Email" />
+                        <Label
+                            FontSize="Large"
+                            Text="Password"
+                            VerticalOptions="Center" />
+                        <Entry
+                            BackgroundColor="White"
+                            Completed="Entry_OnCompleted"
+                            IsPassword="True"
+                            VerticalOptions="Center"
+                            x:Name="Password" />
+                    </StackLayout>
+                </Frame>
+
+                <StackLayout HorizontalOptions="End" VerticalOptions="End">
+                    <Button
+                        BackgroundColor="White"
+                        Clicked="Login"
+                        CornerRadius="20"
+                        HorizontalOptions="Center"
+                        ImageSource="icon"
+                        Text="Login"
+                        TextColor="#5868DD"
+                        VerticalOptions="Center" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="Start" VerticalOptions="End">
+                    <Button
+                        BackgroundColor="#0F093F"
+                        Clicked="RegisterPage"
+                        CornerRadius="20"
+                        HorizontalOptions="Center"
+                        ImageSource="icon"
+                        Text="Register"
+                        TextColor="#E4FBFF"
+                        VerticalOptions="Center" />
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

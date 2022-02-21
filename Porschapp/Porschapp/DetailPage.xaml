@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <ContentPage
-    Title="Home"
+    Title="Inicio"
     x:Class="Porschapp.DetailPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
@@ -57,6 +57,7 @@
                             Source="https://i.ibb.co/h9Q1Qrk/image.png" />
                         <ImageButton
                             BackgroundColor="Transparent"
+                            Clicked="go_to_cayenne"
                             Grid.Column="1"
                             Source="https://i.ibb.co/RCY7gg8/image.png" />
                         <ImageButton
@@ -66,8 +67,9 @@
                             Source="https://i.ibb.co/1JbmsXX/image.png" />
                         <ImageButton
                             BackgroundColor="Transparent"
+                            Clicked="go_to_tycan"
                             Grid.Column="3"
-                            Source="https://i.ibb.co/tCPx5r5/image.png" />
+                            Source="https://i.ibb.co/kDHCT5p/image.png" />
                     </Grid>
                 </ScrollView>
                 <Grid Row="4">
@@ -117,11 +119,10 @@
                 </Frame>
                 <ImageButton
                     BackgroundColor="Transparent"
+                    Clicked="go_to_login"
                     Grid.Row="5"
                     Source="https://i.ibb.co/bsJxmdt/image.png" />
-
             </Grid>
-
         </Grid>
     </ContentPage.Content>
 </ContentPage>
