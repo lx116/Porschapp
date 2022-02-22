@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <ContentPage
+    Title="MotorSport"
     x:Class="Porschapp.MotorSport"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
             <Grid.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#464C47" Offset="0.1" />
@@ -13,15 +20,58 @@
                     <GradientStop Color="#0F0F0F" Offset="1" />
                 </LinearGradientBrush>
             </Grid.Background>
-            <Grid Margin="50">
-                <Image Source="https://i.ibb.co/YdGT3HS/image.png" />
-                <Label
-                    FontFamily="Montserrat"
-                    FontSize="30"
-                    HorizontalTextAlignment="Center"
-                    Text="Este apartado estara disponible en la siguiente actualizacion"
-                    TextColor="White" />
-            </Grid>
+            <Image
+                Aspect="AspectFit"
+                Grid.Row="1"
+                Source="https://i.ibb.co/4sNX4kF/Porsche-Logo.png"
+                VerticalOptions="Start" />
+            <CarouselView
+                Grid.Row="3"
+                ItemsSource="{Binding EventsInformations}"
+                Margin="10">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Frame
+                                BackgroundColor="Transparent"
+                                BorderColor="#C29049"
+                                CornerRadius="20"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center">
+                                <Grid Margin="5">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40" />
+                                        <RowDefinition Height="2" />
+                                        <RowDefinition Height="250" />
+                                        <RowDefinition Height="5" />
+                                        <RowDefinition Height="250" />
+                                    </Grid.RowDefinitions>
+                                    <Label
+                                        FontFamily="Porsche"
+                                        FontSize="24"
+                                        Grid.Row="0"
+                                        HorizontalTextAlignment="Center"
+                                        Text="{Binding _Tittle_event}"
+                                        TextColor="White" />
+                                    <Frame
+                                        BorderColor="#C29049"
+                                        CornerRadius="20"
+                                        Grid.Row="2">
+                                        <Image Aspect="Fill" Source="{Binding _Events}" />
+                                    </Frame>
+                                    <Label
+                                        FontFamily="Montserrat"
+                                        FontSize="18"
+                                        Grid.Row="4"
+                                        Text="{Binding _InfoEvent}"
+                                        TextColor="White" />
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
         </Grid>
     </ContentPage.Content>
+
 </ContentPage>
