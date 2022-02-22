@@ -36,6 +36,14 @@
                     </Grid.RowDefinitions>
                     <Button
                         BackgroundColor="Transparent"
+                        Clicked="go_to_models"
+                        FontFamily="Porsche"
+                        FontSize="24"
+                        Grid.Row="0"
+                        Text="Modelos"
+                        TextColor="White" />
+                    <Button
+                        BackgroundColor="Transparent"
                         Clicked="go_to_history"
                         FontFamily="Porsche"
                         FontSize="24"

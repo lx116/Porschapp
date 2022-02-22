@@ -108,20 +108,6 @@
                         Grid.Row="1"
                         Source="https://i.ibb.co/nkGjhXx/image.png" />
                 </Grid>
-                <Frame CornerRadius="20" Grid.Row="5">
-                    <Frame.Background>
-                        <LinearGradientBrush>
-                            <GradientStop Color="#55717E" Offset="0.1" />
-                            <GradientStop Color="#222831" Offset="0.5" />
-                            <GradientStop Color="#55717E" Offset="0.1" />
-                        </LinearGradientBrush>
-                    </Frame.Background>
-                </Frame>
-                <ImageButton
-                    BackgroundColor="Transparent"
-                    Clicked="go_to_login"
-                    Grid.Row="5"
-                    Source="https://i.ibb.co/bsJxmdt/image.png" />
             </Grid>
         </Grid>
     </ContentPage.Content>

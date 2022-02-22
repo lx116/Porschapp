@@ -1,33 +1,170 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<ContentPage
+<TabbedPage
+    BarBackgroundColor="Black"
+    SelectedTabColor="#A43131"
+    Title="Todos los modelos"
     x:Class="Porschapp.AllModels"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <ContentPage.Content>
+    <ContentPage Title="Sport">
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="220" />
-                <RowDefinition Height="120" />
-                <RowDefinition Height="32" />
-                <RowDefinition Height="120" />
-                <RowDefinition Height="32" />
-                <RowDefinition Height="120" />
-                <RowDefinition Height="32" />
-                <RowDefinition Height="120" />
-                <RowDefinition Height="32" />
-            </Grid.RowDefinitions>
             <Grid.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#464C47" Offset="0.1" />
-                    <GradientStop Color="#222831" Offset="0.4" />
+                    <GradientStop Color="#A43131" Offset="0.4" />
                     <GradientStop Color="#0F0F0F" Offset="1" />
                 </LinearGradientBrush>
             </Grid.Background>
-            <Image
-                Grid.Row="0"
-                HorizontalOptions="Center"
-                Source="https://i.ibb.co/4sNX4kF/Porsche-Logo.png" />
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="250" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="250" />
+                </Grid.RowDefinitions>
+                <Label
+                    FontFamily="Porsche"
+                    FontSize="30"
+                    Grid.Row="0"
+                    Text="Porsche 911"
+                    TextColor="White" />
+                <ImageButton
+                    BackgroundColor="Transparent"
+                    Grid.Row="1"
+                    Source="https://i.ibb.co/HnRvsJc/NAZ-af1ff17ccc3b4231b8825e4b9ebe1659-removebg-preview.png" />
+                <Label
+                    FontFamily="Porsche"
+                    FontSize="30"
+                    Grid.Row="3"
+                    Text="Porsche 718"
+                    TextColor="White" />
+                <Image Grid.Row="4" Source="https://i.ibb.co/mhNDZk6/RT-V-d31c9283be884c32865ab6186c18042f-removebg-preview.png" />
+            </Grid>
         </Grid>
-    </ContentPage.Content>
-</ContentPage>
+    </ContentPage>
+    <ContentPage Title="Familiar">
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#464C47" Offset="0.1" />
+                    <GradientStop Color="#402306" Offset="0.4" />
+                    <GradientStop Color="#0F0F0F" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <ScrollView Orientation="Vertical">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="250" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="250" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="250" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="30"
+                        Grid.Row="0"
+                        Text="Porsche Cayenne"
+                        TextColor="White" />
+                    <ImageButton
+                        BackgroundColor="Transparent"
+                        Grid.Row="1"
+                        Source="https://i.ibb.co/vmyYkYT/20201006-PORSCHE-CAYENNE-GTS-COUPE-2021-PORTADA-removebg-preview.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="30"
+                        Grid.Row="3"
+                        Text="Porsche Macan"
+                        TextColor="White" />
+                    <Image Grid.Row="4" Source="https://i.ibb.co/nRjV7tf/20211007-PORSCHE-MACAN-2022-COLOMBIA-PRECIOS-VERSIONES-CARACTERISTICAS-01-removebg-preview.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="30"
+                        Grid.Row="5"
+                        Text="Porsche Panamera"
+                        TextColor="White" />
+                    <Image Grid.Row="6" Source="https://i.ibb.co/xXcFsNF/20202608-PORSCHE-PANAMERA-2021-PORTADA-removebg-preview.png" />
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Electric">
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#464C47" Offset="0.1" />
+                    <GradientStop Color="#55717E" Offset="0.4" />
+                    <GradientStop Color="#0F0F0F" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="250" />
+                </Grid.RowDefinitions>
+                <Label
+                    FontFamily="Porsche"
+                    FontSize="30"
+                    Grid.Row="0"
+                    Text="Porsche Taycan"
+                    TextColor="White" />
+                <ImageButton
+                    BackgroundColor="Transparent"
+                    Grid.Row="1"
+                    Source="https://i.ibb.co/6FnS6BG/20200710-PORSCHE-TAYCAN-ELECTRICO-COLOMBIA-PRECIO-VERSIONES-CARACTERISTICAS-01-removebg-preview.png" />
+            </Grid>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="HyperCar">
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#464C47" Offset="0.1" />
+                    <GradientStop Color="#C29049" Offset="0.4" />
+                    <GradientStop Color="#0F0F0F" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <ScrollView Orientation="Vertical">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70" />
+                        <RowDefinition Height="250" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="250" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="250" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="30"
+                        Grid.Row="0"
+                        Text="Porsche Carrera GT"
+                        TextColor="White" />
+                    <ImageButton
+                        BackgroundColor="Transparent"
+                        Grid.Row="1"
+                        Source="https://i.ibb.co/tBf0cxx/2003-porsche-carrera-gt-11-removebg-preview.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="30"
+                        Grid.Row="3"
+                        Text="Porsche 918 Spyder"
+                        TextColor="White" />
+                    <Image Grid.Row="4" Source="https://i.ibb.co/5scrQy8/2015-porsche-918-spyder-removebg-preview.png" />
+                    <Label
+                        FontFamily="Porsche"
+                        FontSize="30"
+                        Grid.Row="5"
+                        Text="Porsche 959"
+                        TextColor="White" />
+                    <Image Grid.Row="6" Source="https://i.ibb.co/rtynGFp/PCNA20-0734-fine-removebg-preview.png" />
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </ContentPage>
+</TabbedPage>

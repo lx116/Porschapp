@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace Porschapp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AllModels : ContentPage
+    public partial class AllModels : TabbedPage
     {
         public AllModels()
         {

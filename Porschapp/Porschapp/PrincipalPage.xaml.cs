@@ -27,5 +27,10 @@ namespace Porschapp
             App.FlyoutP.Detail.Navigation.PushAsync(new MotorSport());
             App.FlyoutP.IsPresented = false;
         }
+        private void go_to_models(object sender, EventArgs e )
+        {
+            App.FlyoutP.Detail.Navigation.PushAsync(new AllModels());
+            App.FlyoutP.IsPresented = false;
+        }
     }
 }
