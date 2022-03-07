@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="Porschapp.News"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <!--  Cargar contenido  -->
+        <RefreshView BackgroundColor="Red">
+            <CollectionView ItemsSource="{Binding EventsInformations}">
+                <!--  Fondo de pantalla con gradiente en diagonal  -->
+                <CollectionView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#464C47" Offset="0.1" />
+                        <GradientStop Color="#222831" Offset="0.4" />
+                        <GradientStop Color="#0F0F0F" Offset="1" />
+                    </LinearGradientBrush>
+                </CollectionView.Background>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <RelativeLayout Margin="20">
+                            <BoxView
+                                Color="Silver"
+                                RelativeLayout.HeightConstraint="5"
+                                RelativeLayout.WidthConstraint="200"
+                                RelativeLayout.XConstraint="0"
+                                RelativeLayout.YConstraint="10" />
+                            <BoxView
+                                Color="Silver"
+                                RelativeLayout.HeightConstraint="5"
+                                RelativeLayout.WidthConstraint="200"
+                                RelativeLayout.XConstraint="0"
+                                RelativeLayout.YConstraint="20" />
+                            <BoxView
+                                Color="Silver"
+                                RelativeLayout.HeightConstraint="65"
+                                RelativeLayout.WidthConstraint="5"
+                                RelativeLayout.XConstraint="10"
+                                RelativeLayout.YConstraint="0" />
+                            <BoxView
+                                Color="Silver"
+                                RelativeLayout.HeightConstraint="65"
+                                RelativeLayout.WidthConstraint="5"
+                                RelativeLayout.XConstraint="20"
+                                RelativeLayout.YConstraint="0" />
+                            <Label
+                                FontFamily="Porsche"
+                                FontSize="20"
+                                RelativeLayout.XConstraint="30"
+                                RelativeLayout.YConstraint="25"
+                                Text="{Binding _Tittle_event}"
+                                TextColor="White" />
+                            <StackLayout
+                                Margin="20"
+                                RelativeLayout.XConstraint="10"
+                                RelativeLayout.YConstraint="75">
+                                <Frame
+                                    BackgroundColor="Transparent"
+                                    BorderColor="Goldenrod"
+                                    CornerRadius="20">
+                                    <Image Aspect="AspectFill" Source="{Binding _Events}" />
+                                </Frame>
+                            </StackLayout>
+                            <Label
+                                FontFamily="Montserrat"
+                                FontSize="18"
+                                RelativeLayout.HeightConstraint="350"
+                                RelativeLayout.XConstraint="10"
+                                RelativeLayout.YConstraint="380"
+                                Text="{Binding _InfoEvent}"
+                                TextColor="Azure" />
+                            <!--  News Icon  -->
+                            <AbsoluteLayout>
+                                <Frame
+                                    AbsoluteLayout.LayoutBounds="300,600,80,80"
+                                    BackgroundColor="White"
+                                    CornerRadius="30">
+                                    <Image Aspect="AspectFill" Source="https://i.ibb.co/4sNX4kF/Porsche-Logo.png" />
+                                </Frame>
+                            </AbsoluteLayout>
+                        </RelativeLayout>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>

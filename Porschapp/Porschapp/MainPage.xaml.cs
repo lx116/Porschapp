@@ -13,7 +13,11 @@ namespace Porschapp
         {
             InitializeComponent();
             this.Flyout = new PrincipalPage();
-            this.Detail = new NavigationPage(new DetailPage());
+            this.Detail = new NavigationPage(new DetailPage())
+            {
+                BarBackgroundColor = Color.FromHex("#222831"),
+                BarTextColor = Color.White
+            };
             App.FlyoutP = this;
         }
     }

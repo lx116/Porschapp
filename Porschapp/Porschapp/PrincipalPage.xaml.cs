@@ -32,5 +32,10 @@ namespace Porschapp
             App.FlyoutP.Detail.Navigation.PushAsync(new AllModels());
             App.FlyoutP.IsPresented = false;
         }
+        private void go_to_noticias(object sender, EventArgs e )
+        {
+            App.FlyoutP.Detail.Navigation.PushAsync(new News());
+            App.FlyoutP.IsPresented = false;
+        }
     }
 }
